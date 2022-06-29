@@ -13,6 +13,9 @@ const TodoLatihan = () => {
     setTodos([...todos, inputTodo]);
     setInputTodo("");
   };
+  const hapus = (event) => {
+    delete setTodos(event.target.value);
+  };
 
   return (
     <div>
@@ -20,7 +23,10 @@ const TodoLatihan = () => {
       <button onClick={addTodo}>add</button>
 
       {todos.map((item, index) => (
-        <h1 key={index}>{item}</h1>
+        <h1 key={index}>
+          {item}
+          <button onClick={hapus}>delete</button>
+        </h1>
       ))}
     </div>
   );
