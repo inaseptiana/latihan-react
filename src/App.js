@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import CounterLatihan from "./latihan/CounterLatihan";
+import LoginLatihan1 from "./latihan/LoginLatihan1";
+import LoginLatihan2 from "./latihan/LoginLatihan2";
+import TodoLatihan from "./latihan/TodoLatihan";
+// import Counter from "./components/Counter";
+// import CartItem from "./components/CartItem";
+// import Login from "./components/Login";
+
+// function App() {
+//   // state
+//   const [nama, setNama] = useState("ina");
+//   const [products, setProducts] = useState(["apel", "mangga", "jeruk"]);
+//   return (
+//     <div>
+//       <h1 onClick={() => setNama("Alpa")}>{nama}</h1>
+
+//       <Login />
+
+//       {products.map((item, index) => (
+//         <CartItem key={index} product={item} />
+//       ))}
+//       <Counter />
+//     </div>
+//   );
+// }
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CounterLatihan />
+      <LoginLatihan1 />
+      <LoginLatihan2 />
+      <TodoLatihan />
     </div>
   );
 }
